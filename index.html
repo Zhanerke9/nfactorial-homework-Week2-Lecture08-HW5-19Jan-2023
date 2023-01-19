@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture-5 HW3</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <title>Lecture 05</title>
+    <div id="first" class="first"></div>
+    <div class="about first">
+      <p>About dom</p>
+      <a href="https://www.google.com">Go to google</a>
+      <img src="" alt="sorting?">
+    </div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <!-- <script src="./index1.js"></script> -->
+    <!-- ex-2 is below: -->
+    <script>
+      let body = document.body;
+
+      body.innerHTML = "<!--" + body.tagName + "-->";
+
+      alert( body.firstChild.data ); // что выведет?
+    </script>
+  </body>
+</html>
